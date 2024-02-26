@@ -12,7 +12,7 @@ source:
     - make.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -25,8 +25,8 @@ test:
     - ${PREFIX}/bin/kg4vasp.x
     - test -f data_transport.dat
     - test -f elec_conductivity_vs_freq.dat 
+    - test -f input_parameters
   files:
-    - input_parameters
     - nabla.dat
     - INPUT 
 
