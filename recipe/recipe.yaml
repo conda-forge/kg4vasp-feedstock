@@ -22,6 +22,7 @@ requirements:
   build:
     - make
     - ${{ compiler('fortran') }}
+    - ${{ stdlib("c") }}
 
 tests:
   - files:
